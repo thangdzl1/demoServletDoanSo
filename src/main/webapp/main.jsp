@@ -1,3 +1,4 @@
+<%@ page isELIgnored="false" %>
 <%@ page import="model.userInputServlet" %>
 <%@ page contentType="text/html; charset=UTF-8"%>
 <!DOCTYPE html>
@@ -17,6 +18,7 @@
       <div class="p-4 border mt-4">
         <% userInputServlet input = new userInputServlet(); %>
         <% String contextPath = request.getContextPath(); %>
+        <h3>${msg}</h3>
         <form action="<%=contextPath%>/main" method="post">
             <div class="form-group">
               <label>Nhập số</label>
