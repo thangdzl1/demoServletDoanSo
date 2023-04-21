@@ -1,13 +1,22 @@
 package model;
 
 public class userInputServlet {
-    private int number;
+    private int count;
+    private String name;
 
-    public int getNumber() {
-        return number;
+    public String getName() {
+        return name;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getCount () {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
     }
 }
