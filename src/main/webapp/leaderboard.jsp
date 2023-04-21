@@ -59,7 +59,7 @@
           </tr>
         </table>
         <div id="buttons">
-        <form action="main.jsp" method="post">
+        <form action="<%=contextPath%>/main" method="post">
           <button class="continue">Continue</button>
         </form>
         </div>

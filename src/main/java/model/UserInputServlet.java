@@ -1,6 +1,6 @@
 package model;
 
-public class userInputServlet {
+public class UserInputServlet {
     private int count;
     private String name;
 
