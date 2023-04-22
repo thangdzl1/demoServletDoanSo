@@ -12,6 +12,7 @@ import model.UserInputServlet;
 
 @WebServlet(name = "leaderboardServlet", urlPatterns = "/leaderboard")
 public class leaderboardServlet extends HttpServlet {
+    public int oder = 0;
     public ArrayList<UserInputServlet> list = new ArrayList<>();
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -21,7 +22,7 @@ public class leaderboardServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         UserInputServlet user = new UserInputServlet();
-        user.setName(req.getParameter("user"));
+        user.setName(req.getParameter("name"));
         user.setCount(Integer.parseInt(req.getParameter("count")));
         list.add(user);
         Collections.sort(list, new Comparator<UserInputServlet>() {
